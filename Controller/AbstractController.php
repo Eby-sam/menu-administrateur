@@ -13,6 +13,7 @@ abstract class AbstractController
      */
     abstract public function index();
 
+
     /**
      * @param string $template
      * @param array $data
