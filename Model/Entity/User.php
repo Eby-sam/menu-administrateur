@@ -7,6 +7,7 @@ use menu\Model\Entity\Role;
 class User extends AbstractEntity
 {
     private string $name;
+    private
 
     /**
      * @return string
@@ -24,5 +25,7 @@ class User extends AbstractEntity
         $this->name = $name;
         return $this;
     }
+
+
 
 }
