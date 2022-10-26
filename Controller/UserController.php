@@ -3,7 +3,7 @@
 namespace menu\Controller;
 
 use menu\Model\Entity\User;
-use menu\Model\Manager\userManager;
+use menu\Model\Manager\UserManager;
 class HomeController extends AbstractController
 {
     /**
