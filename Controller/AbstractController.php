@@ -1,6 +1,6 @@
 <?php
 
-namespace creepy\Controller;
+namespace menu\Controller;
 
 use menu\Model\Entity\Role;
 use menu\Model\Entity\User;

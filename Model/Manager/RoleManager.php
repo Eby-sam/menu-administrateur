@@ -13,9 +13,9 @@ class RoleManager
 
     /**
      * @param User $user
-     * @return Role
+     * @return void|null
      */
-    public static function getRoleByUser(User $user): Role
+    public static function getRoleByUser(User $user): self
     {
         $roles = null;
         $query = DataBase::DataConnect()->query("
@@ -24,8 +24,7 @@ class RoleManager
             foreach($query->fetchAll() as $roleData) {
                 $roles = (new Role())
                     ->setId($roleData['id'])
-                    ->setRoleName($roleData['role_name'])
-                ;
+                    ->setRoleName($roleData['role_name']);
             }
         }
         return $roles;

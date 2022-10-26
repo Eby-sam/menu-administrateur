@@ -7,7 +7,6 @@ use menu\Model\Entity\Role;
 class User extends AbstractEntity
 {
     private string $name;
-    private
 
     /**
      * @return string
@@ -19,13 +18,11 @@ class User extends AbstractEntity
 
     /**
      * @param string $name
+     * @return $this
      */
     public function setName(string $name): self
     {
         $this->name = $name;
         return $this;
     }
-
-
-
 }
