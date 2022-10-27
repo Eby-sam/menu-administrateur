@@ -13,9 +13,9 @@ class RoleManager
 
     /**
      * @param User $user
-     * @return void|null
+     * @return Role
      */
-    public static function getRoleByUser(User $user): self
+    public static function getRoleByUser(User $user): Role
     {
         $roles = null;
         $query = DataBase::DataConnect()->query("
